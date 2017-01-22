@@ -15,9 +15,7 @@ namespace money_top_up
 		public double moneyRemainder(double money)
 		{
 			var pennies = money - Math.Truncate(money);
-			Console.WriteLine(pennies == 0);
 			double cashSaving = pennies == 0 ? 0 : 1 - pennies;
-			Console.WriteLine(cashSaving);
 			addToSavings(cashSaving);
 			return cashSaving;
 		}
